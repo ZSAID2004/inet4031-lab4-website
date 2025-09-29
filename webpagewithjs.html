@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <title>Zuhaib's Lab 4 Website</title>
+  </head>
+  <body style="background-color: lightblue; font-family: Arial, sans-serif; text-align: center; padding: 20px;">
 
-<h2>Simple Web Page with HTML and JavaScript</h2>
+    <h1>Welcome to Zuhaib's Lab 4 Website</h1>
 
-<p>JavaScript can change HTML attribute values.</p>
+    <p>
+      This page demonstrates how <strong>JavaScript</strong> can dynamically change 
+      the attributes of HTML elements.
+    </p>
 
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <p>
+      In this example, JavaScript changes the <code>src</code> (source) attribute 
+      of an image to switch the light bulb on and off.
+    </p>
 
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+      Turn on the light
+    </button>
 
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <br><br>
 
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:150px; border:2px solid black; border-radius:10px;">
 
-</body>
+    <br><br>
+
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">
+      Turn off the light
+    </button>
+
+  </body>
 </html>
+
